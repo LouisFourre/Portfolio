@@ -1,0 +1,30 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site
+        run: npm run portfo:build
+
+      - name: Build Docker image
+        run: docker build -t portfolio:latest .
+
+      - name: Restart container
+        run: |
+          docker rm -f portfolio || true
+          docker run -d --name portfolio -p 9605:80 --network proxy --restart unless-stopped portfolio:latest
