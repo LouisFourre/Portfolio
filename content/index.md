@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "Louis Fourré"
+  name: "EN CONSTRUCTION - - - -Louis Fourré"
   text: "Ingénieur informatique - DevSecOps"
   tagline: Apprenti DevSecOps chez Macif Assurance, passionné de CI/CD, cloud et intelligence artificielle.
   actions:
@@ -25,6 +25,7 @@ features:
   - title: Intelligence artificielle
     details: Entraînement de modèles de vision par ordinateur (YOLOv11n), publication scientifique indexée IEEE Xplore.
 ---
+# EN CONSTRUCTION
 
 ## À propos
 
