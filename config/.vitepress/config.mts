@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   srcDir: '../content',
-
+  outDir: '../dist',
   title: 'Portfolio',
   description: "Portfolio avec vitepress",
   themeConfig: {
