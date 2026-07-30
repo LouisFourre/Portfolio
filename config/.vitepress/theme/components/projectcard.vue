@@ -26,25 +26,36 @@ defineProps({
 .project-card {
   display: block;
   border: 1px solid var(--vp-c-divider);
-  border-radius: 8px;
+  border-top: 3px solid var(--vp-c-brand-1);
+  border-radius: 4px;
   overflow: hidden;
   margin: 1rem 0;
   text-decoration: none;
   color: inherit;
-  transition: border-color .2s, transform .2s;
+  background: var(--vp-c-bg);
+  transition: border-color .2s, transform .2s, box-shadow .2s;
 }
 .project-card:hover {
   border-color: var(--vp-c-brand-1);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: var(--vp-shadow-3);
 }
-.project-img { width: 100%; display: block; }
-.project-body { padding: 1rem; }
-.project-body h3 { margin: 0 0 .5rem; }
-.project-tags { margin-top: .75rem; display: flex; flex-wrap: wrap; gap: .4rem; }
+.project-img { width: 100%; display: block; aspect-ratio: 16 / 9; object-fit: cover; }
+.project-body { padding: 1.25rem; }
+.project-body h3 {
+  margin: 0 0 .5rem;
+  font-family: var(--font-family-display);
+  font-size: 1.2rem;
+  border-top: none;
+  padding-top: 0;
+}
+.project-tags { margin-top: .9rem; display: flex; flex-wrap: wrap; gap: .4rem; }
 .tag {
   font-size: .75rem;
-  padding: .15rem .5rem;
-  border-radius: 999px;
-  background: var(--vp-c-default-soft);
+  font-weight: 500;
+  padding: .2rem .6rem;
+  border-radius: 4px;
+  color: var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
 }
 </style>

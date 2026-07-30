@@ -1,6 +1,6 @@
 ---
 title: Tourelle automatique
-image: /img/projet1.png
+image: /img/tourelle/tourelle.jpg
 description: Conception d'une tourelle pouvant être contrôlée à distance par une manette ou complètement automatique via de la reconnaissance en direct de ballons de différentes couleurs grâce à une IA.
 tags: [Impression 3D, Modélisation, Développement, IA]
 ---

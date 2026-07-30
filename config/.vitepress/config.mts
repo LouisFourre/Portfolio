@@ -14,14 +14,10 @@ export default defineConfig({
       { text: 'Self Host', link: '/self-host' },
     ],
 
-    sidebar: [
-      {
-
-      }
-    ],
-
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/LouisFourre' }
+      { icon: 'github', link: 'https://github.com/LouisFourre' },
+      { icon: 'linkedin', link: 'https://www.linkedin.com/in/louis-fourre/' },
+      { icon: 'gmail', link: 'mailto:fourre.louis@gmail.com' }
     ]
   }
 })
