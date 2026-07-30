@@ -27,4 +27,4 @@ jobs:
       - name: Restart container
         run: |
           docker rm -f portfolio || true
-          docker run -d --name portfolio -p 9605:80 --restart unless-stopped portfolio:latest
+          docker run -d --name portfolio -p 80:80 --network proxy --restart unless-stopped portfolio:latest
