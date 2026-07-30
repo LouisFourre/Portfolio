@@ -9,5 +9,5 @@ RUN npm run portfo:build
 
 FROM nginx:stable-alpine
 COPY --from=build /app/dist /usr/share/nginx/html
-EXPOSE 80
+EXPOSE 9605
 CMD ["nginx", "-g", "daemon off;"]
